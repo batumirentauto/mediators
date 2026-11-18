@@ -46,3 +46,117 @@
     @media(max-width:900px){.knowledge-grid{grid-template-columns:1fr 1fr}.knowledge-head{display:block}.knowledge-head p{margin-top:22px}}
     @media(max-width:600px){.knowledge{padding:82px 0}.knowledge-grid{grid-template-columns:1fr}.knowledge-card{min-height:230px}}
   
+/* --- MOBILE MASTER OVERRIDES --- */
+@media (max-width: 600px) {
+  .hero-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .hero-eyebrow {
+    display: inline-block !important;
+    max-width: 100% !important;
+    padding: 6px 10px !important;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.10em !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+    border-radius: 4px !important;
+  }
+  .hero-eyebrow:before {
+    display: none !important;
+  }
+  .hero-title {
+    font-size: clamp(1.65rem, 6.5vw, 2.05rem) !important;
+    line-height: 1.16 !important;
+    letter-spacing: -0.025em !important;
+    margin: 14px 0 16px !important;
+    text-wrap: balance !important;
+  }
+  .hero-title span {
+    display: inline !important;
+    margin-top: 0 !important;
+  }
+  .hero-lead {
+    font-size: 0.88rem !important;
+    line-height: 1.46 !important;
+    margin-bottom: 16px !important;
+    max-width: 100% !important;
+  }
+  .hero-points {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    margin-bottom: 22px !important;
+    font-size: 0.78rem !important;
+    line-height: 1.4 !important;
+  }
+  .actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin-top: 12px !important;
+    width: 100% !important;
+  }
+  .actions .btn {
+    width: 100% !important;
+    min-height: 48px !important;
+    font-size: 0.85rem !important;
+    border-radius: 999px !important;
+    border: 1px solid var(--ink) !important;
+    text-decoration: none !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+  .actions .btn.primary {
+    background: var(--wine) !important;
+    border-color: var(--wine) !important;
+    color: #fff !important;
+  }
+  .hero {
+    min-height: auto !important;
+    background: #d6d6d5 !important;
+  }
+  .hero .wrap {
+    min-height: auto !important;
+    padding-top: 84px !important;
+    padding-bottom: 390px !important;
+    display: block !important;
+  }
+  .hero-bg {
+    inset: auto 0 0 !important;
+    height: 380px !important;
+    background-color: #e4e3e1 !important;
+  }
+  .hero-bg img {
+    position: absolute !important;
+    right: -6vw !important;
+    bottom: 0 !important;
+    top: auto !important;
+    height: 100% !important;
+    width: auto !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    object-position: center bottom !important;
+    opacity: 1 !important;
+  }
+  .section-title, .clarity h2 {
+    font-size: clamp(1.65rem, 6.2vw, 2.05rem) !important;
+    line-height: 1.18 !important;
+  }
+  .portrait-band {
+    padding-top: 360px !important;
+  }
+  .portrait-band .photo {
+    height: 360px !important;
+    width: 100% !important;
+    right: 0 !important;
+  }
+  .portrait-copy blockquote {
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem) !important;
+    line-height: 1.22 !important;
+  }
+  .cta h2 {
+    font-size: clamp(1.85rem, 7.5vw, 2.35rem) !important;
+    line-height: 1.1 !important;
+  }
+}
